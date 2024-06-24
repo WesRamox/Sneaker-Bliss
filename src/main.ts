@@ -1,5 +1,6 @@
 import { handlerModal } from "./functions/closeModal"
 import { addProduct } from "./functions/addProduct"
+import { renderProducts } from "./functions/renderProducts"
 import './style.css'
 
 const formSubmit = document.querySelector(".form-cad")
@@ -18,4 +19,5 @@ closeModal?.addEventListener("click", (ev) => {
   handlerModal()
 })
 
+renderProducts()
 

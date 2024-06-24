@@ -78,24 +78,23 @@ a {
 
 .box {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   padding: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product {
   display: flex; 
   flex-direction: column;
-  width: 350px;
+  width: 270px;
   font-family: 'Hind', sans-serif;
 }
 
 .product img {
   border-radius: 5px;
-}
-
-.link-product img {
-  width: 350px;
+  height: 270px;
+  object-fit: cover;
 }
 
 .link-product {
