@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "0",
+      "name": "Yeezy V2",
+      "brand": "Adidas",
+      "image": "ola",
+      "old_price": 2.599,
+      "last_price": 2.599
+    },
+    {
+      "id": "1",
+      "name": "Yeezy V2",
+      "brand": "Adidas",
+      "image": "ola",
+      "old_price": 2.599,
+      "last_price": 2.599
+    },
+    {
+      "id": "ce9d",
+      "name": "sasasas",
+      "brand": "asasa",
+      "image": "asasasa",
+      "old_price": "11313",
+      "last_price": "13131"
+    },
+    {
+      "id": "42f9",
+      "name": "sasa",
+      "brand": "asasa",
+      "image": "s13131",
+      "old_price": "13131",
+      "last_price": "31311"
+    },
+    {
+      "id": "0fc0",
+      "name": "asasas",
+      "brand": "asas",
+      "image": "a131",
+      "old_price": "1313131",
+      "last_price": "13131"
+    },
+    {
+      "id": "42c4",
+      "name": "sasas",
+      "brand": "asasa",
+      "image": "asasa",
+      "old_price": 13131,
+      "last_price": 313131
+    }
+  ]
+}

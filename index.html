@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="app">
-      <header>
+      <header class="">
         <nav>
           <h1 class="logo">
             S<span style="color: rgb(96, 28, 223);">n</span>eak<span style="color: rgb(96, 28, 223);">e</span>r <span style="color: rgb(96, 28, 223);">Bliss</span>
@@ -18,7 +18,7 @@
               <a href="">Produtos</a>
             </li>
             <li>
-              <a href="">Vender meu Tenis</a>
+              <button class="sell-button">Vender meu Tenis</button>
             </li>
             <li>
               <a href="">Suporte</a>
@@ -72,6 +72,28 @@
           </div>
         </div>
       </main>
+      <section class="sell-modal hidden">
+        <form action="http://localhost:3000/products" method="post" class="form-cad">
+          <fieldset class="prices-inputs">
+            <label for="brand">Marca</label>
+            <input type="text" id="brand">
+
+            <label for="name">Nome do Tenis</label>
+            <input type="text" id="name">
+
+            <label form="image">Imagem</label>
+            <input type="text" id="image">
+          </fieldset>
+          <fieldset class="prices-inputs">
+            <label for="old-price">Preço Antigo</label>
+            <input type="number" id="old-price">
+            <label for="last-price">Preço Atual</label>
+            <input type="number" id="last-price">
+          </fieldset>
+          <button>Cadastrar Produto</button>
+          <button class="close-modal">Sair</button>
+        </form>
+      </section>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
