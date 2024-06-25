@@ -105,6 +105,11 @@ a {
   color: white;
 }
 
+.link-product img {
+  width: 270px;
+
+}
+
 .desc {
   display: flex;
   justify-content: center;

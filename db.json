@@ -1,22 +1,6 @@
 {
   "products": [
     {
-      "id": "0",
-      "name": "Yeezy V2",
-      "brand": "Adidas",
-      "image": "http://localhost:5173/src/assets/Sneakers/yeezy.webp",
-      "old_price": 2.599,
-      "last_price": 2.599
-    },
-    {
-      "id": "1",
-      "name": "Yeezy V2",
-      "brand": "Adidas",
-      "image": "http://localhost:5173/src/assets/Sneakers/yeezy.webp",
-      "old_price": 2.599,
-      "last_price": 2.599
-    },
-    {
       "id": "13ca",
       "name": "Airmax 90",
       "brand": "Nike",
@@ -41,15 +25,6 @@
       "image": "https://fila.vtexassets.com/arquivos/ids/901184/F01L00160_917.jpg?v=638277856472830000",
       "old_price": 11,
       "last_price": 1131,
-      "pix": ""
-    },
-    {
-      "id": "5dcf",
-      "name": "313131",
-      "brand": "13131",
-      "image": "https://imgcentauro-a.akamaihd.net/1300x1300/98060532.jpg",
-      "old_price": 11,
-      "last_price": 111,
       "pix": ""
     }
   ]

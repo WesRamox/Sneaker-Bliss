@@ -1,4 +1,5 @@
 export interface IArticle {
+  id?: string
   name: string
   brand: string
   image: string

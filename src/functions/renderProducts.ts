@@ -13,6 +13,10 @@ export const renderProducts = async() => {
 const renderElements = (data: IArticle) => {
   const boxElements = <HTMLElement>document.querySelector(".box")
 
+  const linkMain = document.createElement("a")
+  linkMain.classList.add("link-product")
+  linkMain.href = `${data.id}`
+
   const mainProduct = document.createElement("div")
   mainProduct.classList.add("product")
 
@@ -39,8 +43,8 @@ const renderElements = (data: IArticle) => {
   lastPrice.textContent = data.last_price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
   lastPrice.classList.add("last-price")
 
-
-  mainProduct.append(productImage, productDesc) 
+  mainProduct.append(linkMain)
+  linkMain.append(productImage, productDesc) 
   productDesc.append(productBrand, productName, priceBox)
   priceBox.append(oldPrice, lastPrice)
   boxElements?.append(mainProduct)
