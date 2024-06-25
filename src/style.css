@@ -44,6 +44,7 @@ a {
 .logo {
   font-size: 2rem;
   letter-spacing: 2px;
+  cursor: default;
 }
 
 .navbar {
@@ -167,6 +168,16 @@ a {
 }
 
 .sell-button {
+  padding: 5px 10px;
+  background-color: transparent;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.all-products {
   padding: 5px 10px;
   background-color: transparent;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
