@@ -1,5 +1,5 @@
 import { IArticle } from "../interfaces/IArticle"
-import { renderElements, renderProducts } from "./renderProducts"
+import { renderElements } from "./renderProducts"
 
 let products: IArticle[] = []
 
@@ -11,20 +11,12 @@ export const allProducts = async() => {
   if(products.length === 0) {
     const response = await fetch("http://localhost:3000/products")
     const data = await response.json()
-
     boxElements.innerHTML = ""
-    
     data.map((product: IArticle) => products.push(product))
     products.map((product: IArticle) => renderElements(product))
-
+    
     titlePage.textContent = `Todos os Produtos ✨ (${products.length})`
     navTrends.textContent = "Produtos Destaque"
-    navTrends.addEventListener("click", renderProducts)
-  } else {
-    boxElements.innerHTML = "" 
-    titlePage.textContent = "Produtos em Destaque 🔥"
-    navTrends.textContent = "Todos os Produtos"
-    navTrends.addEventListener("click", renderProducts)
   }
 }
   

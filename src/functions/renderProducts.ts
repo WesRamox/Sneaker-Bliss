@@ -1,28 +1,20 @@
 import { IArticle } from "../interfaces/IArticle"
-import { allProducts } from "./allProducts"
 
-const trendProducts: IArticle[] = []
+const products: IArticle[] = []
 
 export const renderProducts = async() => {
-  const navTrends = <HTMLElement>document.querySelector(".all-products")
-  const titlePage = <HTMLElement>document.querySelector("#title-page")
   const boxElements = <HTMLElement>document.querySelector(".box")
 
-  if(trendProducts.length === 0) {
+  if(products.length === 0) {
     const response = await fetch("http://localhost:3000/products?_start=0&_limit=5")
     const data = await response.json()
 
     boxElements.innerHTML = ""
-    data.map((product: IArticle) => trendProducts.push(product))
-    trendProducts.map((product: IArticle) => renderElements(product))
-  } else {
-    boxElements.innerHTML = "" 
-    titlePage.textContent = "Produtos em Destaque 🔥"
-    navTrends.textContent = "Todos os Produtos"
-    trendProducts.map((product: IArticle) => renderElements(product))
-    navTrends.addEventListener("click", allProducts)
-  }
+    data.map((product: IArticle) => products.push(product))
+    products.map((product: IArticle) => renderElements(product))
+  } 
 }
+
 
 export const renderElements = (data: IArticle) => {
   const boxElements = <HTMLElement>document.querySelector(".box")
