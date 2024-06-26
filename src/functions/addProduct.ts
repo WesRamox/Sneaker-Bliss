@@ -9,7 +9,7 @@ export const addProduct = async () => {
    const imageUrl = (<HTMLInputElement>document.getElementById("image")).value
    const oldPrice = (<HTMLInputElement>document.getElementById("old-price")).value
    const lastPrice = (<HTMLInputElement>document.getElementById("last-price")).value
-   const pix = (<HTMLInputElement>document.getElementById("pix")).value
+   const phone = (<HTMLInputElement>document.getElementById("phone")).value
 
    const articleData: IArticle = {
       name: nameProduct,
@@ -17,7 +17,7 @@ export const addProduct = async () => {
       image: imageUrl,
       old_price: Number(oldPrice),
       last_price: Number(lastPrice),
-      pix: pix
+      phoneNumber: phone
    }
 
    await fetch('http://localhost:3000/products', {

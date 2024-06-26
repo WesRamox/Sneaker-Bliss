@@ -7,7 +7,7 @@
       "image": "https://imgnike-a.akamaihd.net/1920x1920/0093187T.jpg",
       "old_price": 200,
       "last_price": 150,
-      "pix": "13411"
+      "phoneNumber": "13411"
     },
     {
       "id": "40c7",
@@ -16,7 +16,7 @@
       "image": "https://fila.vtexassets.com/arquivos/ids/901184/F01L00160_917.jpg?v=638277856472830000",
       "old_price": 269,
       "last_price": 170,
-      "pix": ""
+      "phoneNumber": ""
     },
     {
       "id": "8178",
@@ -25,7 +25,7 @@
       "image": "https://fila.vtexassets.com/arquivos/ids/901184/F01L00160_917.jpg?v=638277856472830000",
       "old_price": 11,
       "last_price": 1131,
-      "pix": ""
+      "phoneNumber": ""
     },
     {
       "id": "95f6",
@@ -34,7 +34,7 @@
       "image": "https://imgnike-a.akamaihd.net/1920x1920/0093187T.jpg",
       "old_price": 950,
       "last_price": 666,
-      "pix": ""
+      "phoneNumber": ""
     },
     {
       "id": "9af8",
@@ -43,7 +43,7 @@
       "image": "https://imgnike-a.akamaihd.net/1920x1920/0093187T.jpg",
       "old_price": 2000,
       "last_price": 1600,
-      "pix": ""
+      "phoneNumber": ""
     },
     {
       "id": "7211",
@@ -52,7 +52,16 @@
       "image": "https://imgnike-a.akamaihd.net/1920x1920/0093187T.jpg",
       "old_price": 134113,
       "last_price": 131313,
-      "pix": ""
+      "phoneNumber": ""
+    },
+    {
+      "id": "9ec7",
+      "name": "",
+      "brand": "",
+      "image": "",
+      "old_price": 0,
+      "last_price": 0,
+      "phoneNumber": ""
     }
   ]
 }

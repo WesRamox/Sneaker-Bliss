@@ -34,28 +34,38 @@
         <div class="box">
         </div>
       </main>
-      <section class="sell-modal hidden">
+      <section class="sell-modal">
         <form action="http://localhost:3000/products" method="post" class="form-cad">
-          <fieldset class="prices-inputs">
+          <h1 class="logo" style="font-size: 3rem; text-align: center;">
+            S<span style="color: rgb(96, 28, 223);">n</span>eak<span style="color: rgb(96, 28, 223);">e</span>r B<span style="color: rgb(96, 28, 223);">l</span>i<span style="color: rgb(96, 28, 223);">s</span>s <span style="color: rgb(96, 28, 223);"></span>
+          </h1>
+          <div class="form-box">
+            <div class="title-modal">
+              <p>Cadastre seu Tênis</p>
+            </div>
             <label for="brand">Marca</label>
-            <input type="text" id="brand">
+            <input type="text" id="brand" placeholder="Tesla">
 
             <label for="name">Nome do Tenis</label>
-            <input type="text" id="name">
+            <input type="text" id="name" placeholder="Tesla Nine White">
 
             <label form="image">Imagem</label>
-            <input type="text" id="image">
-          </fieldset>
-          <fieldset class="prices-inputs">
+            <input type="text" id="image" placeholder="Image URL">
+
             <label for="old-price">Preço Antigo</label>
-            <input type="number" id="old-price">
+            <input type="number" id="old-price" placeholder="Ex: 750,90">
+
             <label for="last-price">Preço Atual</label>
-            <input type="number" id="last-price">
-            <label for="pix">Pix</label>
-            <input type="number" id="pix">
-          </fieldset>
-          <button>Cadastrar Produto</button>
-          <button class="close-modal">Sair</button>
+            <input type="number" id="last-price" placeholder="Ex: 559,90">
+
+            <label for="phone">Telefone</label>
+            <input type="number" id="phone" placeholder="(11) 91234-5678">
+
+            <div class="form-buttons">
+              <button class="cad-product">Cadastrar Produto</button>
+              <button class="close-modal">Sair</button>
+            </div>
+          </div>
         </form>
       </section>
     </div>
