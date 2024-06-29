@@ -1,9 +1,11 @@
 import { IArticle } from "../interfaces/IArticle"
+import { allProducts } from "./allProducts"
 
 const products: IArticle[] = []
 
 export const renderProducts = async() => {
   const boxElements = <HTMLElement>document.querySelector(".box")
+  const allProductsButton = document.querySelector(".all-products")
 
   if(products.length === 0) {
     const response = await fetch("http://localhost:3000/products?_start=0&_limit=5")
@@ -12,7 +14,7 @@ export const renderProducts = async() => {
     boxElements.innerHTML = ""
     data.map((product: IArticle) => products.push(product))
     products.map((product: IArticle) => renderElements(product))
-  } 
+  }
 }
 
 
@@ -22,9 +24,10 @@ export const renderElements = (data: IArticle) => {
   const linkMain = document.createElement("a")
   linkMain.classList.add("link-product")
   linkMain.href = `${data.id}`
-
+  
   const mainProduct = document.createElement("div")
   mainProduct.classList.add("product")
+  mainProduct.dataset.id =  `${data.id}`
 
   const productImage = document.createElement("img")
   productImage.src = data.image
